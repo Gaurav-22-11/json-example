@@ -6,7 +6,7 @@ class TestJSONManipulation(unittest.TestCase):
     def test_read_json_file(self):
         data = json_manipulation.read_json_file("test_data.json")
         self.assertIsInstance(data, dict)
-        self.assertEqual(len(data), 2)
+        self.assertEqual(len(data), 3)
 
     def test_get_value_from_json(self):
         data = {'key1': 'value1', 'key2': 'value2'}
