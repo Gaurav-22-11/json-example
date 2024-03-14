@@ -16,8 +16,8 @@ class TestJSONManipulation(unittest.TestCase):
     def test_write_json_file(self):
         data = {'key1': 'value1', 'key2': 'value2'}
         file_path = "output_data.json"
-        json_manipulation.write_value(data, file_path)
-        written_data = json_manipulation.read_json_file(file_path)
+        json_manipulation.write_value(data, file_path)  # Corrected function name
+        written_data = json_manipulation.read_value(file_path)  # Corrected function name
         self.assertEqual(data, written_data)
 
 if __name__ == "__main__":
